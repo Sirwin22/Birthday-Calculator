@@ -15,7 +15,7 @@
 					<label>Birthday:</label>
 					<input type="date" name="birthday" class="form-control" required>
 				</div>
-				<button type="submit" name="calculate" class="btn btn-primary">Calculate</button>
+				<center><button type="submit" name="calculate" class="btn btn-primary">Calculate</button></center>
 			</form>
 
 			 <?php
