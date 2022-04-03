@@ -18,19 +18,34 @@
 				<button type="submit" name="calculate" class="btn btn-primary">Calculate</button>
 			</form>
 
-			<?php
-				if(isset($_POST['calculate'])){
-					$bday = $_POST['birthday'];
-					$today = date('Y-m-d');
-					$diff = date_diff(date_create($bday), date_create($today));
-					?>
-					<div class="alert alert-info text-center" style="margin-top:20px;">
-						<?php echo 'Age is <b>'.$diff->format('%y').'</b>'; ?>
-					</div>
-					<?php
-				}
-				
-			?>
+			 <?php
+		if(isset($_POST['submit'])) {
+
+			$day=$_POST['day'];
+			$month=$_POST['month'];
+			$year=$_POST['year'];
+		 
+			$dob=$day.'-'.$month.'-'.$year;
+
+			$bday=new DateTime($dob);
+			
+			$age=$bday->diff(new DateTime);
+			 
+			$today=date('d-m-Y'); 
+			
+			echo '<br />';
+			echo '<b>Your Birth date: </b>';
+			echo $dob;
+			echo '<br>';
+			echo '<b>Your Age : </b> ';
+			echo $age->y;
+			echo ' Years, ';
+			echo $age->m;
+			echo ' Months, ';
+			echo $age->d;
+			echo ' Days';
+		}
+	   ?>
 		</div>
 	</div>
 </div>
