@@ -2,12 +2,12 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Simple Age Calculator in PHP</title>
+	<title>DICTCC3 Age Calculator</title>
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body>
 <div class="container">
-	<h1 class="page-header text-center">Simple Age Calculator</h1>
+	<h1 class="page-header text-center">Age Calculator</h1>
 	<div class="row">
 		<div class="col-sm-4 col-sm-offset-4">
 			<form method="POST">
