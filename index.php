@@ -25,7 +25,7 @@
 					$diff = date_diff(date_create($bday), date_create($today));
 					?>
 					<div class="alert alert-info text-center" style="margin-top:20px;">
-						<?php echo 'Age is <b>'.$diff->format('%y').'</b> years,'<b>'.$diff->format('%m').'</b> months, and '<b>'.$diff->format('%y').'</b> days,'; ?>
+						<?php echo 'Age is <b>'.$diff->format('%y').'</b> years,'<b>'.$diff->format('%m').'</b> months, and '<b>'.$diff->format('%d').'</b> days,'; ?>
 					</div>
 					<?php
 				}
